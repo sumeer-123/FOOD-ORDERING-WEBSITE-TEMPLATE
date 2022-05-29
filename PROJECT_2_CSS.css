@@ -1,0 +1,276 @@
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth; /*With this when we click on any button in navigation bar we reach at that section*/
+}
+
+/*NAVIGATION BAR STYLING*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+/*LOGO & IMAGE STYLING*/
+#logo{
+    margin: 2px 4px;
+}
+#logo img{
+    height: 60px;
+    margin: 2px 4px;
+}
+
+/*LIST STYLING*/
+ #navbar ul{
+    display: flex;
+}
+#navbar ::before{     /*FOR NAVBAR BLACK BACKGROUND WE USE BEFORE/AFTER PSEUDO SELECTORS*/
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none; /*with this bullets removed from list items*/
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding:3px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar ul li a:hover{
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    color: #000;
+}
+
+
+/* EDITING HOME SECTION */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 670px;
+ }
+ #home::before{
+    content: "";
+    background: url(/PROJECTS/kk.jpg) no-repeat center center/cover;  /*With no repeat picture is used as full bg*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ }
+ #home h1{
+    text-align: center;
+    color: cornsilk;
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+ }
+ #home p{
+    text-align: center;
+    color: cornsilk;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* EDITING SERVICES SECTION */
+#work{
+    margin: 34px;
+    display: flex;
+}
+#work .box {
+    border: 2px solid red;
+    padding: 30px;
+    margin: 3px 6px; 
+    border-radius:20px ;  
+    background-color: rgb(201, 233, 233);  
+}
+#work .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#work h2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+#work p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.services h1{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+/* EDITING FOR CHEF'S SECTION */
+#Chef-Section{
+    height: 570px;
+}
+#Chef-Section::before{
+    content: "";
+    position: absolute;
+    background: url(/PROJECTS/Chef\ BG.png);
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#chef{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chef img{
+    height: 300px;
+}
+.chef-name {
+    padding: 40px;
+}
+
+
+/* EDITING FOR FOOD SECTION */
+#dish-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Food-Section::before{
+    content: "";
+    position: absolute;
+    background: url(/PROJECTS/f_bg.png);
+    width : 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#dish-name img{
+    height: 300px;
+}
+.dish{
+    padding: 40px;
+}
+.Name{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* EDITING FOR FOOD-DELEIVERY-SECTION */
+#Deleivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Food-Deleivery-Section::before{
+    content: "";
+    position: absolute;
+    background: url(/PROJECTS/Delivery_Bg.png) no-repeat center center/cover;
+    width : 100%;
+    height: 63%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#Deleivery img{
+    height: 300px;
+}
+.Food{
+    padding: 40px;
+}
+
+
+/* EDITING FOR CONTACT US SECTION */
+#contact{
+    position: relative;
+    height: 620px;   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(/PROJECTS/cu.jpg) no-repeat center center/cover;
+    width : 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#contact-box input{
+    width: 250px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid black;
+    border-radius: 45px;
+}
+#contact-box textarea{
+    width: 250px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid black;
+    border-radius: 45px;
+
+}
+#contact-box form{
+    width: 200px; 
+    font-size: 1.2rem;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    padding: 5px 30px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+ /*UTILITY CLASS*/
+ .h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+ }
+ .h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+ }
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: whitesmoke;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+ }
